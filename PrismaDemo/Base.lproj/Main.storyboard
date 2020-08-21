@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,57 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="prasmDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XVf-Gx-QFO">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="4Xv-uw-0nI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cat-MQ-C6j">
+                                <rect key="frame" x="20" y="668" width="99" height="30"/>
+                                <state key="normal" title="Choose Image"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSq-1T-6tQ">
+                                <rect key="frame" x="316" y="668" width="78" height="30"/>
+                                <state key="normal" title="Apply Filter"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prisma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gi-ya-aeS">
+                                <rect key="frame" x="160.5" y="64" width="93.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1gi-ya-aeS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3lZ-at-7Ax"/>
+                            <constraint firstItem="Cat-MQ-C6j" firstAttribute="top" secondItem="XVf-Gx-QFO" secondAttribute="bottom" constant="20" id="Zxu-pp-pmT"/>
+                            <constraint firstItem="VSq-1T-6tQ" firstAttribute="top" secondItem="Cat-MQ-C6j" secondAttribute="top" id="j8z-Ku-Pzg"/>
+                            <constraint firstItem="XVf-Gx-QFO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ldJ-nS-dV2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VSq-1T-6tQ" secondAttribute="trailing" constant="20" id="ljH-Td-5gv"/>
+                            <constraint firstItem="Cat-MQ-C6j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vTE-eT-K60"/>
+                            <constraint firstItem="1gi-ya-aeS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yLx-Ef-p4j"/>
+                            <constraint firstItem="XVf-Gx-QFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yRH-3z-TTQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XVf-Gx-QFO" secondAttribute="trailing" id="z8N-Ma-t7M"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonApplyFilter" destination="VSq-1T-6tQ" id="ZZz-iY-GSS"/>
+                        <outlet property="buttonChooseImg" destination="Cat-MQ-C6j" id="VGw-Yv-28X"/>
+                        <outlet property="imgHeight" destination="4Xv-uw-0nI" id="MtZ-mj-SuS"/>
+                        <outlet property="photo" destination="XVf-Gx-QFO" id="xcS-W4-vMj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133" y="139"/>
         </scene>
     </scenes>
 </document>

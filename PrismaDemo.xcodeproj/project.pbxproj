@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		992717D724EFF3E300C45F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992717D624EFF3E300C45F9A /* AppDelegate.swift */; };
 		992717D924EFF3E300C45F9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992717D824EFF3E300C45F9A /* SceneDelegate.swift */; };
-		992717DB24EFF3E300C45F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992717DA24EFF3E300C45F9A /* ViewController.swift */; };
 		992717DE24EFF3E300C45F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992717DC24EFF3E300C45F9A /* Main.storyboard */; };
 		992717E024EFF3E600C45F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992717DF24EFF3E600C45F9A /* Assets.xcassets */; };
 		992717E324EFF3E600C45F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992717E124EFF3E600C45F9A /* LaunchScreen.storyboard */; };
+		992717EF24EFF4CE00C45F9A /* StarryStyle.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 992717EE24EFF4CE00C45F9A /* StarryStyle.mlmodel */; };
+		997F1F6F24EFF57600A5830D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F1F6E24EFF57600A5830D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		992717D324EFF3E300C45F9A /* PrismaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrismaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992717D624EFF3E300C45F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		992717D824EFF3E300C45F9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		992717DA24EFF3E300C45F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		992717DD24EFF3E300C45F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		992717DF24EFF3E600C45F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992717E224EFF3E600C45F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		992717E424EFF3E600C45F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992717EE24EFF4CE00C45F9A /* StarryStyle.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StarryStyle.mlmodel; sourceTree = "<group>"; };
+		997F1F6E24EFF57600A5830D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		992717D524EFF3E300C45F9A /* PrismaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				992717EE24EFF4CE00C45F9A /* StarryStyle.mlmodel */,
 				992717D624EFF3E300C45F9A /* AppDelegate.swift */,
 				992717D824EFF3E300C45F9A /* SceneDelegate.swift */,
-				992717DA24EFF3E300C45F9A /* ViewController.swift */,
+				997F1F6E24EFF57600A5830D /* ViewController.swift */,
 				992717DC24EFF3E300C45F9A /* Main.storyboard */,
 				992717DF24EFF3E600C45F9A /* Assets.xcassets */,
 				992717E124EFF3E600C45F9A /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992717DB24EFF3E300C45F9A /* ViewController.swift in Sources */,
+				997F1F6F24EFF57600A5830D /* ViewController.swift in Sources */,
+				992717EF24EFF4CE00C45F9A /* StarryStyle.mlmodel in Sources */,
 				992717D724EFF3E300C45F9A /* AppDelegate.swift in Sources */,
 				992717D924EFF3E300C45F9A /* SceneDelegate.swift in Sources */,
 			);
